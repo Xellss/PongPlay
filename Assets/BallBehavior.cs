@@ -14,7 +14,6 @@ public class BallBehavior : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-
         int random = Random.Range(0, 2);
 
         if (random == 1)
@@ -38,6 +37,7 @@ public class BallBehavior : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
+
 
     private IEnumerator scaleDelay()
     {
